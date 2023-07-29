@@ -6,6 +6,10 @@ const span = title.firstElementChild;
 query.addEventListener('input', handlerSearch);
 
 function handlerSearch(evt) {
-  span.textContent = evt.currentTarget.value;
-  console.log(span.textContent);
+  const input = evt.currentTarget.value.trim(); 
+  if (input !== "") {
+    span.textContent = input;
+  } else {
+    span.textContent = "Anonymous";
+  };
 };
