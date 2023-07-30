@@ -1,7 +1,5 @@
 const query = document.querySelector('#name-input');
-const title = query.nextElementSibling;
-const span = title.firstElementChild;
-
+const span = document.querySelector('#name-output');
 
 query.addEventListener('input', handlerSearch);
 

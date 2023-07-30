@@ -7,5 +7,5 @@ function handler(evt) {
   let resultSize = 0;
   resultSize += evt.currentTarget.value;
   span.style.fontSize = `${resultSize}px`;
-  console.log(span.style.fontSize);
+ 
 }

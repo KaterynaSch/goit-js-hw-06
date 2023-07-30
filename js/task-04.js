@@ -14,6 +14,5 @@ function handlerClick(evt) {
   } else if (evt.currentTarget === elements.increment) {
     counterValue += 1;    
   };
-  elements.span.textContent = counterValue; 
-  console.log(elements.span.textContent);
+  elements.span.textContent = counterValue;   
 }

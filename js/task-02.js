@@ -18,4 +18,3 @@ ingredients.map((ingredient) => {
 });
 list.append(...result);
 
-console.dir(list.children);
