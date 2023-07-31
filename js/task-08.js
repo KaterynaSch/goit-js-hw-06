@@ -6,8 +6,9 @@ function handlerSubmit(evt) {
   evt.preventDefault();
   const { email, password } = evt.currentTarget.elements;
   if (email.value === "" || password.value === "") {
-     return alert("Заповніть усі поля, будь-ласка!");
-  }  
-  console.dir([email.value, password.value]);
+    return alert("Заповніть усі поля, будь-ласка!");
+  }
+  console.dir({ Email: `${email.value}`, Password: `${password.value}`});
+  
   evt.currentTarget.reset();
 }
