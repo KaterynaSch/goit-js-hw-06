@@ -12,7 +12,6 @@ createBtn.addEventListener('click', createBoxes);
 destroyBtn.addEventListener('click', destroyBoxes);
 
 function createBoxes() { 
-  destroyBoxes();
   let amount = input.valueAsNumber; 
   const boxes = [];  
   
@@ -23,7 +22,7 @@ function createBoxes() {
     div.style.width = ` ${30 + 10*i}px `;
     div.style.height = ` ${30 + 10*i}px `;
     boxes.push(div);  
-    
+    console.dir(bgnColor);
   }
   resultBoxes.append(...boxes);
  

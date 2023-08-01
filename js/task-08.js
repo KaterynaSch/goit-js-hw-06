@@ -8,7 +8,7 @@ function handlerSubmit(evt) {
   if (email.value === "" || password.value === "") {
     return alert("Заповніть усі поля, будь-ласка!");
   }
-  console.dir({ Email: `${email.value}`, Password: `${password.value}`});
+  console.dir({ email: `${email.value}`, password: `${password.value}`});
   
   evt.currentTarget.reset();
 }
