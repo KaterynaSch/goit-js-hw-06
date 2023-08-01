@@ -12,6 +12,7 @@ createBtn.addEventListener('click', createBoxes);
 destroyBtn.addEventListener('click', destroyBoxes);
 
 function createBoxes() { 
+  destroyBoxes();
   let amount = input.valueAsNumber; 
   const boxes = [];  
   
